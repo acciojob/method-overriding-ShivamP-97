@@ -2,15 +2,15 @@ package com.driver;
 
 public class Main {
 
-    // Class A
-    static class A {
+    // Class A (public so test cases can access it)
+    public static class A {
         public String meth() {
             return "Invoking method from class A";
         }
     }
 
-    // Class B extends A
-    static class B extends A {
+    // Class B extends A (public for same reason)
+    public static class B extends A {
         @Override
         public String meth() {
             return "Method is overridden in Extendend class B";
